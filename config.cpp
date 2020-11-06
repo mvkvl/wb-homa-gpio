@@ -113,7 +113,7 @@ namespace
             cfg.maxUnchangedInterval = (long)root["max_unchanged_interval"].asInt();
             LOG(Info) << "set max_unchanged_interval: " << cfg.maxUnchangedInterval;
         } else {
-            cfg.maxUnchangedInterval = 0L;
+            cfg.maxUnchangedInterval = 60L;
         }
 
         for (const auto& channel : channels) {
